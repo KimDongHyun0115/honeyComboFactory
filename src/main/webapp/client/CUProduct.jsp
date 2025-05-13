@@ -195,7 +195,7 @@
 	<!-- Map API CDN -->	
 	<!-- Your APP KEY HERE -->
 	<script type="text/javascript"
-		src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_APP_KEY>&libraries=services,clusterer,drawing"></script>
+		src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_APP_KEY&libraries=services,clusterer,drawing"></script>
 	<!-- 지도 js -->
 	<script src="assets/js/customization/map.js"></script>
 
