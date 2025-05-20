@@ -55,13 +55,16 @@
         <!-- 정렬 기준 선택-->
         ORDER BY
         <choose>
-          <when test="condition == 'SELECTALLPOPULAR' or condition == 'SELECTALLCATEGORYPOPULAR' or condition == 'SELECTALLSEARCHPOPULAR' or condition == 'SELECTALLCUPOPULAR' or condition == 'SELECTALLGSPOPULAR'">
+          <when test="condition == 'SELECTALLPOPULAR' or condition == 'SELECTALLCATEGORYPOPULAR'
+           or condition == 'SELECTALLSEARCHPOPULAR' or condition == 'SELECTALLCUPOPULAR' or condition == 'SELECTALLGSPOPULAR'">
             TOTAL_SALES DESC
           </when>
-          <when test="condition == 'SELECTALLPRICEDESC' or condition == 'SELECTALLCATEGORYDESC' or condition == 'SELECTALLSEARCHDESC'">
+          <when test="condition == 'SELECTALLPRICEDESC' or condition == 'SELECTALLCATEGORYDESC'
+           or condition == 'SELECTALLSEARCHDESC'">
             COMBO_DISCOUNTED_PRICE DESC
           </when>
-          <when test="condition == 'SELECTALLPRICEASC' or condition == 'SELECTALLCATEGORYASC' or condition == 'SELECTALLSEARCHASC'">
+          <when test="condition == 'SELECTALLPRICEASC' or condition == 'SELECTALLCATEGORYASC'
+           or condition == 'SELECTALLSEARCHASC'">
             COMBO_DISCOUNTED_PRICE ASC
           </when>
           <when test="condition == 'SELECTALLMD'">

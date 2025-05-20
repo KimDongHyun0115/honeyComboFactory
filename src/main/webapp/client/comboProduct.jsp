@@ -277,7 +277,11 @@
 	<script src="assets/js/customization/comboProduct.js"></script>
 
 	<!-- Map API CDN -->	
+
+	<!-- KakaoMapAPI_Appkey 부분에 자신의 Appkey 입력 -->
+
 	<!-- Your APP KEY HERE -->
+
 	<script type="text/javascript"
 		src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_APP_KEY&libraries=services,clusterer,drawing"></script>
 	<!-- 지도 js -->

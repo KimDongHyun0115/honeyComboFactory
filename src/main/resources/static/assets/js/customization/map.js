@@ -12,19 +12,27 @@ function initMap() {
 		level: 3
 	});
 }
-
+// 두 지점 간의 거리(미터)를 구하는 함수 (Haversine 공식 사용)
 function getDistance(pos1, pos2) {
-	const R = 6371e3;
+	const R = 6371e3; // 지구 반지름 (미터 단위, 약 6371km)
+	
+	// 위도(lat)를 라디안 단위로 변환
 	const lat1 = pos1.getLat() * Math.PI / 180;
 	const lat2 = pos2.getLat() * Math.PI / 180;
+	
+	// 위도/경도 차이 계산 (라디안 단위)
 	const deltaLat = (pos2.getLat() - pos1.getLat()) * Math.PI / 180;
 	const deltaLng = (pos2.getLng() - pos1.getLng()) * Math.PI / 180;
 
+	// 하버사인 공식의 핵심 부분 (a 값 계산)
 	const a = Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2) +
 		Math.cos(lat1) * Math.cos(lat2) *
 		Math.sin(deltaLng / 2) * Math.sin(deltaLng / 2);
 
+	// 대원거리(중심각) 계산	
 	const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+	
+	// 최종 거리 반환 (단위: 미터)
 	return R * c;
 }
 
