@@ -18,7 +18,9 @@
 
 
 	<!-- getAll -->
-	
+
+	<!-- 개별 상품 번호, 개별 상품 이름, 개별 상품 가격, 개별 상품 할인율, 개별 상품 할인된 가격, 개별 상품 이미지, 개별 상품 편의점, 개별 상품 카테고리, 개별 상품 재고  -->
+
 	<select id="SELECTALLDYNAMIC" resultMap="productSingleMap">
   	SELECT
     PRODUCT_SINGLE_NUMBER,
