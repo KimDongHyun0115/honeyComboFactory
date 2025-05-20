@@ -192,7 +192,8 @@
 	<!-- 사용자 정의 js -->
 	<script src="assets/js/customization/CUProduct.js"></script>
 
-	<!-- Map API CDN -->	
+	<!-- Map API CDN -->
+	<!-- KakaoMapAPI_Appkey 부분에 자신의 Appkey 입력 -->	
 	<script type="text/javascript"
 		src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=2e7733c00b354ba7c613e544a4b52ce2&libraries=services,clusterer,drawing"></script>
 	<!-- 지도 js -->

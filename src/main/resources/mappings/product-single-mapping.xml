@@ -18,6 +18,7 @@
 
 
 	<!-- getAll -->
+	
 	<select id="SELECTALLDYNAMIC" resultMap="productSingleMap">
   	SELECT
     PRODUCT_SINGLE_NUMBER,
@@ -134,7 +135,7 @@
 	
 	<!-- 상품명 중복 확인 -->
 	<select id="EXISTSBYNAME" resultType="int">
-	SELECT COUNT(*) FROM PRODUCT_SINGLE WHERE PRODUCT_SINGLE_NAME = #{productSingleName}
+	SELECT COUNT(PRODUCT_SINGLE_NAME) FROM PRODUCT_SINGLE WHERE PRODUCT_SINGLE_NAME = #{productSingleName}
 	</select>
 	
 	<!-- 브랜드별 상품번호 시퀀스 -->
